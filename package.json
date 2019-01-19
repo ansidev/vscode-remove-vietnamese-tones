@@ -2,8 +2,13 @@
   "name": "remove-vietnamese-tones",
   "displayName": "Remove Vietnamese tones",
   "description": "This extension will help you remove Vietnamese tones from selected text.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
+  "publisher": "ansidev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansidev/vscode-remove-vietnamese-tones"
+  },
   "engines": {
     "vscode": "^1.30.0"
   },

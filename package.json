@@ -1,0 +1,37 @@
+{
+  "name": "remove-vietnamese-tones",
+  "displayName": "Remove Vietnamese tones",
+  "description": "This extension will help you remove Vietnamese tones from selected text.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.removeVietnameseTones"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "extension.removeVietnameseTones",
+      "title": "Remove Vietnamese tones"
+    }]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.4",
+    "vscode": "^1.1.26",
+    "tslint": "^5.12.1",
+    "@types/node": "^10.12.18",
+    "@types/mocha": "^5.2.5"
+  }
+}

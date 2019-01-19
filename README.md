@@ -1,4 +1,6 @@
-# remove-vietnamese-tones README
+# VSCode Extension Remove Vietnamese Tones
+
+[![Build Status](https://dev.azure.com/ansidev0024/ansidev/_apis/build/status/ansidev.vscode-remove-vietnamese-tones?branchName=master)](https://dev.azure.com/ansidev0024/ansidev/_build/latest?definitionId=1?branchName=master)
 
 This is the README for your extension "remove-vietnamese-tones". After writing up a brief description, we recommend including the following sections.
 

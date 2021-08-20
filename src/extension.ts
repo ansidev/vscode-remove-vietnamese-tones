@@ -8,32 +8,44 @@ export function activate(context: vscode.ExtensionContext) {
 
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-    console.log('Congratulations, your extension "remove-vietnamese-tones" is now active!');
+  console.log('Congratulations, your extension "remove-vietnamese-tones" is now active!');
 
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with registerCommand
   // The commandId parameter must match the command field in package.json
-  let disposable = vscode.commands.registerCommand('extension.removeVietnameseTones', () => {
+  let disposable = vscode.commands.registerTextEditorCommand('remove-vietnamese-tones.removeVietnameseTones', (textEditor: vscode.TextEditor, edit: vscode.TextEditorEdit) => {
     // The code you place here will be executed every time your command is executed
-
-    const editor = vscode.window.activeTextEditor;
-    if (!editor) {
+    if (!textEditor) {
       vscode.window.showInformationMessage("No active editor!");
       return;
     }
-    const selection = editor.selection;
-    const selectedText = editor.document.getText(selection);
-    const removeVietnameseTonesText: string = removeVietnameseTones(selectedText);
-    editor.edit(builder => builder.replace(selection, removeVietnameseTonesText));
+
+    textEditor.selections.forEach(selection => {
+      const selectedText = textEditor.document.getText(selection);
+      const processedText: string = removeVietnameseTonesFromString(selectedText);
+      edit.replace(selection, processedText);
+    });
+
+    if (textEditor.selection.isEmpty) {
+      const currentCursorPosition: vscode.Position = textEditor.selection.start;
+      const currentWordRange = textEditor.document.getWordRangeAtPosition(currentCursorPosition);
+      if (currentWordRange) {
+        const selectedText = textEditor.document.getText(currentWordRange);
+        const processedText: string = removeVietnameseTonesFromString(selectedText);
+        textEditor.edit(builder => builder.replace(currentWordRange, processedText));
+      }
+    }
   });
 
   context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() {
+  vscode.window.showInformationMessage('Extension "remove-vietnamese-tones" was disabled!');
+}
 
-export const removeVietnameseTones = (str: string) => {
+export const removeVietnameseTonesFromString = (str: string) => {
   str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, 'a');
   str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, 'e');
   str = str.replace(/ì|í|ị|ỉ|ĩ/g, 'i');

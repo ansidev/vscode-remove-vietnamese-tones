@@ -2,7 +2,7 @@
   "name": "remove-vietnamese-tones",
   "displayName": "Remove Vietnamese tones",
   "description": "This extension will help you remove Vietnamese tones from selected text.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "publisher": "ansidev",
   "repository": {

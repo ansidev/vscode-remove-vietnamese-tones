@@ -1,0 +1,16 @@
+{
+  "types": [
+    { "type": "feat", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "chore", "hidden": true },
+    { "type": "docs", "hidden": true },
+    { "type": "style", "hidden": true },
+    { "type": "refactor", "section": "Improvements" },
+    { "type": "perf", "section": "Improvements" },
+    { "type": "test", "hidden": true },
+    { "type": "build", "section": "Dev Changes" },
+    { "type": "ci", "section": "Dev Changes" }
+  ],
+  "commitUrlFormat": "https://github.com/ansidev/vscode-remove-vietnamese-tones/commits/{{hash}}",
+  "compareUrlFormat": "https://github.com/ansidev/vscode-remove-vietnamese-tones/compare/{{previousTag}}...{{currentTag}}"
+}

@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/ansidev/vscode-remove-vietnamese-tones/compare/v2.0.1...v2.0.2) (2022-05-11)
+
+
+### Dev Changes
+
+* config tool for generating changelog automatically ([3058b4c](https://github.com/ansidev/vscode-remove-vietnamese-tones/commits/3058b4cc3a60a1f31a3bba6af7d33c29ea771c21))
+* update Azure Pipelines config ([639d534](https://github.com/ansidev/vscode-remove-vietnamese-tones/commits/639d53438c7b2ad09df3cb2c4bdb1be575fd9f01))
+
 ## 2.0.1 (2021-08-20)
 
 ### Dev Changes

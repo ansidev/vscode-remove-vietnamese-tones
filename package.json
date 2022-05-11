@@ -10,7 +10,7 @@
 		"url": "https://github.com/ansidev/vscode-remove-vietnamese-tones"
 	},
 	"engines": {
-		"vscode": "^1.59.0"
+		"vscode": "^1.67.1"
 	},
 	"categories": [
 		"Other"

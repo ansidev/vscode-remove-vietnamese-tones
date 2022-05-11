@@ -1,6 +1,6 @@
 # VSCode Extension Remove Vietnamese Tones
 
-[![Build Status](https://dev.azure.com/ansidev0024/ansidev/_apis/build/status/ansidev.vscode-remove-vietnamese-tones?branchName=main)](https://dev.azure.com/ansidev0024/ansidev/_build/latest?definitionId=1?branchName=main)
+[![Build Status](https://dev.azure.com/ansidev0024/remove-vietnamese-tones/_apis/build/status/ansidev.vscode-remove-vietnamese-tones?branchName=main)](https://dev.azure.com/ansidev0024/remove-vietnamese-tones/_build/latest?definitionId=1&branchName=main)
 
 ## Features
 
@@ -20,10 +20,4 @@ Nothing at this time.
 
 ## Release Notes
 
-### 1.0.0
-
-- First version.
-
------------------------------------------------------------------------------------------------------------
-
-**Enjoy!**
+See [CHANGELOG.md](./CHANGELOG.md)

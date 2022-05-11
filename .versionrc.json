@@ -11,6 +11,6 @@
     { "type": "build", "section": "Dev Changes" },
     { "type": "ci", "section": "Dev Changes" }
   ],
-  "commitUrlFormat": "https://github.com/ansidev/vscode-remove-vietnamese-tones/commits/{{hash}}",
+  "commitUrlFormat": "https://github.com/ansidev/vscode-remove-vietnamese-tones/commit/{{hash}}",
   "compareUrlFormat": "https://github.com/ansidev/vscode-remove-vietnamese-tones/compare/{{previousTag}}...{{currentTag}}"
 }

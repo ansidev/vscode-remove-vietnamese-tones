@@ -1,70 +1,75 @@
 {
-	"name": "remove-vietnamese-tones",
-	"displayName": "Remove Vietnamese tones",
-	"description": "This extension will help you remove Vietnamese tones from selected text.",
-	"version": "2.0.1",
-	"license": "MIT",
-	"publisher": "ansidev",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ansidev/vscode-remove-vietnamese-tones"
-	},
-	"engines": {
-		"vscode": "^1.67.1"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:remove-vietnamese-tones.removeVietnameseTones"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "remove-vietnamese-tones.removeVietnameseTones",
-				"title": "Remove Vietnamese tones"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "yarn run compile && yarn run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js",
-		"release": "standard-version",
-		"release:minor": "standard-version --release-as minor",
-		"release:patch": "standard-version --release-as patch",
-		"release:major": "standard-version --release-as major",
-		"deploy": "vsce publish --yarn",
-		"prepare": "husky install"
-	},
-	"dependencies": {
-		"@commitlint/cli": "^16.2.4",
-		"@commitlint/config-conventional": "^16.2.4"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.2.0",
-		"@types/mocha": "^9.1.1",
-		"@types/node": "17.0.32",
-		"@types/vscode": "^1.67.0",
-		"@typescript-eslint/eslint-plugin": "^5.23.0",
-		"@typescript-eslint/parser": "^5.23.0",
-		"@vscode/test-electron": "^2.1.3",
-		"eslint": "^8.15.0",
-		"glob": "^8.0.1",
-		"husky": "^8.0.1",
-		"mocha": "^10.0.0",
-		"standard-version": "^9.3.2",
-		"typescript": "^4.6.4",
-		"vsce": "^2.7.0"
-	},
-	"__metadata": {
-		"id": "3e5246af-d5ef-4013-a5a7-59ce389e1d74",
-		"publisherDisplayName": "Lê Minh Trí",
-		"publisherId": "48d64c96-0df2-4904-a44e-89a11c12f61d",
-		"isPreReleaseVersion": false
-	}
+  "name": "remove-vietnamese-tones",
+  "displayName": "Remove Vietnamese tones",
+  "description": "This extension will help you remove Vietnamese tones from selected text.",
+  "version": "2.0.1",
+  "license": "MIT",
+  "publisher": "ansidev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansidev/vscode-remove-vietnamese-tones"
+  },
+  "engines": {
+    "vscode": "^1.67.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:remove-vietnamese-tones.removeVietnameseTones"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "remove-vietnamese-tones.removeVietnameseTones",
+        "title": "Remove Vietnamese tones"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "deploy": "vsce publish --yarn",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "17.0.32",
+    "@types/vscode": "^1.67.0",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "@vscode/test-electron": "^2.1.3",
+    "eslint": "^8.15.0",
+    "glob": "^8.0.1",
+    "husky": "^8.0.1",
+    "mocha": "^10.0.0",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.6.4",
+    "vsce": "^2.7.0"
+  },
+  "__metadata": {
+    "id": "3e5246af-d5ef-4013-a5a7-59ce389e1d74",
+    "publisherDisplayName": "Lê Minh Trí",
+    "publisherId": "48d64c96-0df2-4904-a44e-89a11c12f61d",
+    "isPreReleaseVersion": false
+  },
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
+  }
 }
